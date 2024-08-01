@@ -62,9 +62,9 @@ function handleError (error = {}) {
     return this.status(status).send(body);
 };
 
-app.set('trust proxy', true);
+// app.set('trust proxy', true);
 
-app.use(limiter);
+// app.use(limiter);
 
 app.get('/api/:version/entries/:language/:word', async (req, res) => {
     let { word, language, version } = req.params,

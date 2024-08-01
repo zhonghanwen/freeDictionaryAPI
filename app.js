@@ -62,7 +62,7 @@ function handleError (error = {}) {
     return this.status(status).send(body);
 };
 
-// app.set('trust proxy', true);
+app.set('trust proxy', true);
 
 // app.use(limiter);
 
